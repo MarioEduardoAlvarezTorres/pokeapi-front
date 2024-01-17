@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  </head>
+
+  <body>
+    <div class="background"></div>
+    <div class="container-pokedex">
+      <div class="container-pokedex-left">
+        <div class="container-leds">
+          <div class="blue-ball">
+            <div class="blue-brightness">
+              <div class="white-brightness"></div>
+            </div>
+          </div>
+          <div class="lights">
+            <div class="red-led"></div>
+            <div class="yellow-led"></div>
+            <div class="green-led"></div>
+          </div>
+        </div>
+        <div class="container-screen">
+          <div class="screen-border">
+            <div class="screen">
+              <img id="pokemonImage" src="" alt="Pokemon Image" />
+            </div>
+          </div>
+        </div>
+        <div class="container-panel">
+          <div class="speaker"></div>
+          <div class="container-green-screen">
+            <div class="square-leds">
+              <div class="square-led-red"></div>
+              <div class="square-led-green"></div>
+            </div>
+
+            <div class="green-screen" id="name-screen"></div>
+          </div>
+          <div class="cross"></div>
+        </div>
+      </div>
+      <div class="cilindro">
+        <div class="cilindro-brillo"></div>
+        <div class="cilindro-sombra"></div>
+      </div>
+      <div class="container-pokedex-right">
+        <div class="pokemon-container">
+          <input
+            type="text"
+            id="pokemonInput"
+            placeholder="Ingrese el nombre del Pokémon"
+          />
+          <select id="pokemonSelect"></select>
+        </div>
+        <label class="description-pokemon"></label>
+        <div class="contenedor-azul">
+          <div class="yellow-ball"></div>
+        </div>
+        <div class="info-pokemon">
+          <div id="circulo-amarillo"></div>
+          <div id="peso"></div>
+          <div id="altura"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
